@@ -1,0 +1,86 @@
+<div class="container">
+  <div style="margin:20px" >
+ 
+  <button class="btn btn-primary" (click)="createStudentComponent()">
+      Create Student
+    </button>
+  </div>
+  <table class="table">
+    <tr>
+      <td>deptid</td>
+      <td>name</td>
+
+      <td>dateofjoining</td>
+
+      <td>depart</td>
+      <td>price</td>
+
+    </tr>
+ 
+     <tr *ngFor="let dp of dps">
+      <td>{{ dp.deptId }}</td>
+      <td>{{ dp.nameofemployee }}</td>
+      <td>{{ dp.dateofjoining}}</td>
+      <td>{{ dp.depart}}</td>
+      <td>{{ dp.price }}</td>
+       <td><a (click)="deletefn(dp.deptId)">
+        <i class="fas fa-trash"></i
+      ></a></td> &nbsp;
+       <td><button class="btn btn-primary" (click)=" updateStudentComponent(dp.deptId)">
+          edit
+        </button>
+        </td></tr></table></div> 
+         <!-- <td>username</td>
+
+      <td>dispalyname</td>
+
+      <td>text</td>
+      <td>postedAT</td>
+      <td>postedLevel</td>
+      <td>likes</td>
+      <td>shares</td> -->
+       <!-- <tr>
+        <td>{{dps["username"]}}</td>
+        <td>{{dps["displayname"]}}</td>
+        <td>{{dps["text"]}}</td>
+        <td>{{dps["postedAt"]}}</td>
+        <td>{{dps["postLevel"]}}</td>
+        <td>{{dps["likes"]}}</td>
+        <td>{{dps["shares"]}}</td></tr>
+        <tr>
+          <td>{{dps["replies"][0]["username"]}}</td>
+          <td>{{dps["replies"][0]["displayname"]}}</td>
+          <td>{{dps["replies"][0]["text"]}}</td>
+          <td>{{dps["replies"][0]["postedAt"]}}</td>
+          <td>{{dps["replies"][0]["postLevel"]}}</td>
+          <td>{{dps["replies"][0]["likes"]}}</td> 
+          <td>{{dps["replies"][0]["shares"]}}</td>
+        </tr>
+        <tr>
+          <td>{{dps["replies"][0]["replies"][0]["username"]}}</td>
+          <td>{{dps["replies"][0]["replies"][0]["displayname"]}}</td>
+          <td>{{dps["replies"][0]["replies"][0]["text"]}}</td>
+          <td>{{dps["replies"][0]["replies"][0]["postedAt"]}}</td>
+          <td>{{dps["replies"][0]["replies"][0]["postLevel"]}}</td>
+          <td>{{dps["replies"][0]["replies"][0]["likes"]}}</td> 
+          <td>{{dps["replies"][0]["replies"][0]["shares"]}}</td>
+        </tr>
+        <tr>
+          <td>{{dps["replies"][0]["replies"][1]["username"]}}</td>
+          <td>{{dps["replies"][0]["replies"][1]["displayname"]}}</td>
+          <td>{{dps["replies"][0]["replies"][1]["text"]}}</td>
+          <td>{{dps["replies"][0]["replies"][1]["postedAt"]}}</td>
+          <td>{{dps["replies"][0]["replies"][1]["postLevel"]}}</td>
+          <td>{{dps["replies"][0]["replies"][1]["likes"]}}</td> 
+          <td>{{dps["replies"][0]["replies"][1]["shares"]}}</td>
+        </tr>
+        <tr>
+          <td>{{dps["replies"][1]["username"]}}</td>
+          <td>{{dps["replies"][1]["displayname"]}}</td>
+          <td>{{dps["replies"][1]["text"]}}</td>
+          <td>{{dps["replies"][1]["postedAt"]}}</td>
+          <td>{{dps["replies"][1]["postLevel"]}}</td>
+          <td>{{dps["replies"][1]["likes"]}}</td> 
+          <td>{{dps["replies"][1]["shares"]}}</td>
+        </tr> -->
+   

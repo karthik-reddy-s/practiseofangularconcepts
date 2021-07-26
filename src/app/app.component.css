@@ -1,0 +1,13 @@
+.run{
+    text-align: center;
+}
+.special{
+    color:red;
+    font-size:20px;
+    font-family: italic;
+}
+.notsospecial{
+    color:darkblue;
+    font-size:40px;
+    
+}

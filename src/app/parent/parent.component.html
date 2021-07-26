@@ -1,0 +1,18 @@
+
+
+<div class="row">
+    <div class="col-md-6">
+<div class="walk">
+<h1>walking dead</h1>
+<input type="text" [(ngModel)]="okok" class="form-control"/>
+{{datafromchild}}
+<br/>
+<button class="btn btn-primary" (click)="sendData()">send data to sibling</button>
+
+</div></div>
+
+<div class="col-md-6">
+    <div class="walk1">
+    <h1>running man</h1>
+<app-child [note]="okok" (userNameEmitter)="recieveData($event)"></app-child>
+</div></div></div>

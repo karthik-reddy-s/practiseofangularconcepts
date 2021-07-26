@@ -1,0 +1,39 @@
+<!-- <div  class="loader-container" *ngif="loaderservice.isloading | async">
+  <mat-progress-bar mode="indeterminate" ></mat-progress-bar>
+</div> -->
+
+
+<div class="container" style="margin: 20px; padding: 20px">
+  <form
+    [formGroup]="createStudent"
+    (ngSubmit)="CreateStudents(createStudent.value)"
+  >
+    <input
+      placeholder="nameofemployee"
+      formControlName="nameofemployee"
+      type="text"
+      class="form-control m-4"/>
+    
+    <input
+      placeholder="dateofjoining"
+      formControlName="dateofjoining"
+      type="text"
+      class="form-control m-4"
+    />
+    <input
+      placeholder="depart"
+      formControlName="depart"
+      type="text"
+      class="form-control m-4"
+    />
+    <input
+      placeholder="price"
+      formControlName="price"
+      type="number"
+      class="form-control m-4"/>
+    
+    <input type="submit" value="create employee" class="btn btn-danger" />
+  </form>
+</div>
+
+

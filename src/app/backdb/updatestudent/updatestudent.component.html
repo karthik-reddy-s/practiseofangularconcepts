@@ -1,0 +1,46 @@
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+     
+
+
+
+      <form [formGroup]="deptForm" (ngSubmit)="updateNewStudent(deptForm.value)">
+        <input
+          type="text"
+          id="empname"
+         [(ngModel)]="this.DepartmentModel.NameofEmployee"
+          formControlName="nameofemployee"
+          class="form-control"
+        />
+        <!-- "employeeName": "Rohit",
+                "age": 28,
+                "dateOfJoining": "12/03/2021",
+                "place": "Bangalore", -->
+        <input
+          type="text"
+          id="doj"
+          [(ngModel)]="this.DepartmentModel.Dateofjoining"
+          formControlName="dateofjoining"
+          class="form-control"
+        />
+        <input
+          type="text"
+          id="depart"
+          [(ngModel)]="this.DepartmentModel.Depart"
+          formControlName="depart"
+          class="form-control"
+        />
+        <input
+          type="number"
+          id="price"
+          [(ngModel)]="this.DepartmentModel.Price"
+          formControlName="price"
+          class="form-control"
+        />
+        <input type="submit" value="Upadate Employee" class="btn btn-primary" />
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+<div class="container" style="margin: 20px; padding: 20px">
+    <form
+      [formGroup]="loginform"
+      (ngSubmit)="gotodashboard(loginform.value)"
+    >
+      <input
+        placeholder="userName"
+        formControlName="uname"
+        type="text"
+        class="form-control m-4"
+      />
+      <input
+        placeholder="password"
+        formControlName="pwd"
+        type="password"
+        class="form-control m-4"
+      />
+     
+      <input type="submit" value="submit" class="btn btn-success" />
+    </form>
+  </div>
+  
+
+
